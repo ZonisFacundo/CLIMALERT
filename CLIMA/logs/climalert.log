@@ -1,0 +1,946 @@
+2026-07-07 17:10:02.964 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 2 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:10:02.966 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=30.0 humedad=70
+2026-07-07 17:10:02.967 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=2 temperatura=36.0 humedad=70
+2026-07-07 17:10:02.967 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=2 a 3 destinatarios
+2026-07-07 17:10:02.968 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=2
+2026-07-07 17:10:02.969 [main] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 17:10:02.971 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:10:02.972 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=36.0 humedad=70
+2026-07-07 17:10:02.972 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 17:10:02.972 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=1
+2026-07-07 17:10:02.972 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=1
+2026-07-07 17:10:02.972 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=2 temperatura=37.0 humedad=75
+2026-07-07 17:10:02.972 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=2 a 3 destinatarios
+2026-07-07 17:10:02.972 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=2
+2026-07-07 17:10:03.789 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:10:03.790 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=36.0 humedad=70
+2026-07-07 17:10:03.790 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 17:10:03.790 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=1
+2026-07-07 17:10:03.790 [main] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 17:10:03.790 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=1
+2026-07-07 17:10:03.790 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=2 temperatura=37.0 humedad=75
+2026-07-07 17:10:03.790 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=2 a 3 destinatarios
+2026-07-07 17:10:03.790 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=2
+2026-07-07 17:10:27.984 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 32394 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 17:10:27.985 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:10:28.532 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:10:28.537 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:10:28.538 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:10:28.539 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 17:10:28.568 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:10:28.569 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 552 ms
+2026-07-07 17:10:28.823 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:10:28.833 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 17:10:28.840 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.088 seconds (process running for 1.386)
+2026-07-07 17:10:28.843 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=CABA
+2026-07-07 17:10:29.427 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Cabanatuan temperatura=24.8 humedad=91 condicion=Smoky haze
+2026-07-07 17:10:33.841 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:10:33.842 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=24.8 humedad=91
+2026-07-07 17:15:07.863 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 32669 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 17:15:07.864 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:15:08.426 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:15:08.431 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:15:08.433 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:15:08.433 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 17:15:08.464 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:15:08.465 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 558 ms
+2026-07-07 17:15:08.725 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:15:08.735 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 17:15:08.744 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.129 seconds (process running for 1.427)
+2026-07-07 17:15:08.747 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 17:15:09.357 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.1 humedad=39 condicion=Sunny
+2026-07-07 17:15:13.745 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:15:13.745 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=17.1 humedad=39
+2026-07-07 17:16:13.744 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 17:17:02.040 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 32879 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 17:17:02.041 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:17:02.581 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:17:02.587 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:17:02.588 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:17:02.588 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 17:17:02.618 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:17:02.618 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 537 ms
+2026-07-07 17:17:02.865 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:17:02.875 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 17:17:02.882 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.072 seconds (process running for 1.374)
+2026-07-07 17:17:02.888 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 17:17:03.309 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.1 humedad=39 condicion=Sunny
+2026-07-07 17:17:07.883 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:17:07.884 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=17.1 humedad=39
+2026-07-07 17:18:07.882 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 17:18:41.080 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 33111 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 17:18:41.081 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:18:41.637 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:18:41.642 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:18:41.644 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:18:41.644 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 17:18:41.673 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:18:41.673 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 552 ms
+2026-07-07 17:18:41.923 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:18:41.933 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 17:18:41.939 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.098 seconds (process running for 1.392)
+2026-07-07 17:18:41.942 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 17:18:42.980 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.1 humedad=39 condicion=Sunny
+2026-07-07 17:18:46.940 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:18:46.941 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.1 humedad=39
+2026-07-07 17:18:46.941 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 17:18:46.941 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 17:18:48.215 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=1
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. 5a478bee46e88-31174a583bcsm12883568eec.19 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-07 17:19:46.939 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 17:20:46.939 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 17:21:46.210 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 33339 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 17:21:46.212 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:21:46.761 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:21:46.767 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:21:46.769 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:21:46.769 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 17:21:46.801 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:21:46.801 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 548 ms
+2026-07-07 17:21:47.048 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:21:47.068 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 17:21:47.076 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.1 seconds (process running for 1.399)
+2026-07-07 17:21:47.079 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 17:21:47.657 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.2 humedad=39 condicion=Sunny
+2026-07-07 17:21:52.077 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:21:52.078 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.2 humedad=39
+2026-07-07 17:21:52.078 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 17:21:52.078 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 17:22:02.179 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=1
+org.springframework.mail.MailSendException: Mail server connection failed. Failed messages: jakarta.mail.MessagingException: Got bad greeting from SMTP host: smtp.gmail.com, port: 465, response: [EOF]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:410)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: jakarta.mail.MessagingException: Got bad greeting from SMTP host: smtp.gmail.com, port: 465, response: [EOF]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2231)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:729)
+	at jakarta.mail.Service.connect(Service.java:345)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:399)
+	... 23 common frames omitted
+2026-07-07 17:23:47.278 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 33533 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 17:23:47.280 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:23:47.850 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:23:47.855 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:23:47.856 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:23:47.857 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 17:23:47.886 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:23:47.886 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 567 ms
+2026-07-07 17:23:48.134 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:23:48.144 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 17:23:48.151 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.104 seconds (process running for 1.405)
+2026-07-07 17:23:48.154 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 17:23:49.245 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.2 humedad=39 condicion=Sunny
+2026-07-07 17:23:53.152 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:23:53.152 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.2 humedad=39
+2026-07-07 17:23:53.152 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 17:23:53.153 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 17:24:03.332 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=1
+org.springframework.mail.MailSendException: Mail server connection failed. Failed messages: jakarta.mail.MessagingException: Got bad greeting from SMTP host: smtp.gmail.com, port: 465, response: [EOF]
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:410)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: jakarta.mail.MessagingException: Got bad greeting from SMTP host: smtp.gmail.com, port: 465, response: [EOF]
+	at org.eclipse.angus.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2231)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:729)
+	at jakarta.mail.Service.connect(Service.java:345)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:399)
+	... 23 common frames omitted
+2026-07-07 17:25:17.649 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 33729 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 17:25:17.650 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:25:18.205 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:25:18.211 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:25:18.212 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:25:18.213 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 17:25:18.244 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:25:18.244 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 556 ms
+2026-07-07 17:25:18.506 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:25:18.518 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 17:25:18.525 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.108 seconds (process running for 1.42)
+2026-07-07 17:25:18.531 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 17:25:19.630 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.2 humedad=39 condicion=Sunny
+2026-07-07 17:25:23.526 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:25:23.526 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.2 humedad=39
+2026-07-07 17:25:23.527 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 17:25:23.527 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 17:25:24.624 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=1
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. a92af1059eb24-13b6593c9a1sm13253217c88.2 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-07 17:28:46.259 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 34188 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 17:28:46.260 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:28:46.823 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:28:46.828 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:28:46.830 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:28:46.830 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 17:28:46.859 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:28:46.860 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 555 ms
+2026-07-07 17:28:47.121 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:28:47.132 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 17:28:47.138 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.118 seconds (process running for 1.431)
+2026-07-07 17:28:47.141 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 17:28:47.779 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.2 humedad=39 condicion=Sunny
+2026-07-07 17:28:52.139 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:28:52.140 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.2 humedad=39
+2026-07-07 17:28:52.140 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 17:28:52.141 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 17:28:53.085 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=1
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. 5a478bee46e88-31189cd8234sm1209179eec.9 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-07 17:29:52.138 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 17:30:03.417 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 2 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:30:03.420 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=30.0 humedad=70
+2026-07-07 17:30:03.421 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=2 revisado sin alerta. temperatura=36.0 humedad=70
+2026-07-07 17:30:03.421 [main] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 17:30:03.442 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:30:03.443 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=36.0 humedad=70
+2026-07-07 17:30:03.443 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=1
+2026-07-07 17:30:03.443 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=2 revisado sin alerta. temperatura=37.0 humedad=75
+2026-07-07 17:30:04.383 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:30:04.384 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=36.0 humedad=70
+2026-07-07 17:30:04.384 [main] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 17:30:21.474 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 2 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:30:21.477 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=30.0 humedad=70
+2026-07-07 17:30:21.477 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=2 revisado sin alerta. temperatura=36.0 humedad=70
+2026-07-07 17:30:21.477 [main] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 17:30:21.489 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:30:21.489 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=36.0 humedad=70
+2026-07-07 17:30:21.490 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=1
+2026-07-07 17:30:21.490 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=2 revisado sin alerta. temperatura=37.0 humedad=75
+2026-07-07 17:30:22.255 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:30:22.255 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=36.0 humedad=70
+2026-07-07 17:30:22.255 [main] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 17:31:39.907 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 35027 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 17:31:39.908 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:31:40.486 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:31:40.491 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:31:40.493 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:31:40.493 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 17:31:40.523 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:31:40.523 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 574 ms
+2026-07-07 17:31:40.783 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:31:40.793 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 17:31:40.800 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.131 seconds (process running for 1.436)
+2026-07-07 17:31:40.804 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 17:31:41.198 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.2 humedad=39 condicion=Sunny
+2026-07-07 17:31:45.801 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:31:45.801 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.2 humedad=39
+2026-07-07 17:31:45.802 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 17:31:45.802 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 17:31:46.716 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=1
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. 5a478bee46e88-31174a8bc08sm15335475eec.24 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-07 17:32:45.800 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 17:33:22.448 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 35428 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 17:33:22.449 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:33:23.037 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:33:23.042 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:33:23.044 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:33:23.044 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 17:33:23.076 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:33:23.076 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 582 ms
+2026-07-07 17:33:23.341 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:33:23.351 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 17:33:23.358 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.152 seconds (process running for 1.476)
+2026-07-07 17:33:23.364 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 17:33:23.943 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.2 humedad=39 condicion=Sunny
+2026-07-07 17:33:28.359 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:33:28.360 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.2 humedad=39
+2026-07-07 17:33:28.360 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 17:33:28.360 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 17:33:29.310 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=1
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. a92af1059eb24-13b659c8665sm11832894c88.10 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-07 17:57:26.247 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 36513 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 17:57:26.248 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 17:57:26.810 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 17:57:26.815 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:57:26.816 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 17:57:26.816 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 17:57:26.846 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 17:57:26.846 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 559 ms
+2026-07-07 17:57:27.087 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 17:57:27.109 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 17:57:27.115 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.101 seconds (process running for 1.4)
+2026-07-07 17:57:27.118 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 17:57:27.736 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.2 humedad=36 condicion=Sunny
+2026-07-07 17:57:32.117 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 17:57:32.117 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.2 humedad=36
+2026-07-07 17:57:32.117 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 17:57:32.118 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 17:57:33.237 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=1
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. 5a478bee46e88-31174a5b26csm11413282eec.15 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-07 17:58:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 17:59:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:00:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:01:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:02:27.115 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:02:27.637 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=2 ubicacion=Buenos Aires temperatura=17.2 humedad=36 condicion=Sunny
+2026-07-07 18:02:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=1
+2026-07-07 18:02:32.115 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=2 temperatura=17.2 humedad=36
+2026-07-07 18:02:32.116 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=2 a 3 destinatarios
+2026-07-07 18:02:32.116 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=2
+2026-07-07 18:02:32.967 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=2
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. 5a478bee46e88-3117483dec6sm12302595eec.11 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-07 18:03:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 18:04:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 18:05:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 18:06:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 18:07:27.115 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:07:27.418 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=3 ubicacion=Buenos Aires temperatura=17.2 humedad=36 condicion=Sunny
+2026-07-07 18:07:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=2
+2026-07-07 18:07:32.115 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=3 temperatura=17.2 humedad=36
+2026-07-07 18:07:32.116 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=3 a 3 destinatarios
+2026-07-07 18:07:32.116 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=3
+2026-07-07 18:07:32.992 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=3
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. a92af1059eb24-13b659d7c8bsm11948188c88.12 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-07 18:08:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=3
+2026-07-07 18:09:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=3
+2026-07-07 18:10:29.935 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 39222 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 18:10:29.937 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:10:30.551 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 18:10:30.556 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:10:30.558 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:10:30.558 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 18:10:30.588 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:10:30.588 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 611 ms
+2026-07-07 18:10:30.859 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:10:30.866 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-07-07 18:10:30.876 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-07 18:10:30.887 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-07-07 18:10:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=3
+2026-07-07 18:11:01.162 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 39419 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 18:11:01.163 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:11:01.777 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-07-07 18:11:01.783 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-07-07 18:11:01.785 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:11:01.785 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 18:11:01.817 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:11:01.817 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 615 ms
+2026-07-07 18:11:02.110 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-07-07 18:11:02.121 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-07-07 18:11:02.128 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.222 seconds (process running for 1.55)
+2026-07-07 18:11:02.131 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:11:02.731 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.1 humedad=36 condicion=Clear
+2026-07-07 18:11:07.129 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:11:07.129 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.1 humedad=36
+2026-07-07 18:11:07.129 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 18:11:07.130 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 18:11:08.468 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=1
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. 5a478bee46e88-3117483dec6sm12359035eec.11 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-07 18:11:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=3
+2026-07-07 18:12:17.331 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 39602 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 18:12:17.332 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:12:17.936 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-07-07 18:12:17.941 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-07-07 18:12:17.943 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:12:17.943 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 18:12:17.973 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:12:17.974 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 598 ms
+2026-07-07 18:12:18.235 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-07-07 18:12:18.245 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-07-07 18:12:18.253 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.176 seconds (process running for 1.507)
+2026-07-07 18:12:18.256 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:12:18.699 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.1 humedad=36 condicion=Clear
+2026-07-07 18:12:23.254 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:12:23.254 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.1 humedad=36
+2026-07-07 18:12:23.255 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 18:12:23.255 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 18:12:24.218 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=1
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. 5a478bee46e88-311747f72a6sm13993448eec.1 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-07 18:12:27.115 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:12:27.494 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=4 ubicacion=Buenos Aires temperatura=17.1 humedad=36 condicion=Clear
+2026-07-07 18:12:32.115 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=3
+2026-07-07 18:12:32.115 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=4 temperatura=17.1 humedad=36
+2026-07-07 18:12:32.116 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=4 a 3 destinatarios
+2026-07-07 18:12:32.116 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=4
+2026-07-07 18:12:33.002 [scheduling-1] ERROR Schedulers.SchedulerProcesadorClima - No se pudo despachar la alerta para clima id=4
+org.springframework.mail.MailSendException: Failed messages: org.eclipse.angus.mail.smtp.SMTPSendFailedException: 530-5.7.0 Must issue a STARTTLS command first. For more information, go to
+530-5.7.0  https://support.google.com/a/answer/3221692 and review RFC 3207
+530 5.7.0 specifications. a92af1059eb24-13b659d87a2sm11147981c88.13 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at Notificaciones.NotificadorPorMail.enviar(NotificadorPorMail.java:30)
+	at Notificaciones.GestorDeAlertas.lambda$despacharAlerta$0(GestorDeAlertas.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at Notificaciones.GestorDeAlertas.despacharAlerta(GestorDeAlertas.java:42)
+	at Schedulers.SchedulerProcesadorClima.procesarClima(SchedulerProcesadorClima.java:49)
+	at Schedulers.SchedulerProcesadorClima.lambda$procesarAlertas$0(SchedulerProcesadorClima.java:37)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at Schedulers.SchedulerProcesadorClima.procesarAlertas(SchedulerProcesadorClima.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:369)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-07-07 18:13:23.253 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:14:23.253 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:15:23.253 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:16:12.833 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 40102 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 18:16:12.834 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:16:13.411 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-07-07 18:16:13.416 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-07-07 18:16:13.418 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:16:13.418 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 18:16:13.450 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:16:13.450 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 577 ms
+2026-07-07 18:16:13.719 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-07-07 18:16:13.729 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-07-07 18:16:13.739 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-07 18:16:13.751 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2026-07-07 18:16:23.253 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:16:56.553 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 40376 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 18:16:56.554 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:16:57.159 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-07-07 18:16:57.165 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-07-07 18:16:57.167 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:16:57.167 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 18:16:57.199 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:16:57.199 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 602 ms
+2026-07-07 18:16:57.465 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-07-07 18:16:57.476 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-07-07 18:16:57.483 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.191 seconds (process running for 1.529)
+2026-07-07 18:16:57.486 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:16:58.128 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.1 humedad=36 condicion=Clear
+2026-07-07 18:17:35.300 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 2 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:17:35.303 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=30.0 humedad=70
+2026-07-07 18:17:35.303 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=2 revisado sin alerta. temperatura=36.0 humedad=70
+2026-07-07 18:17:35.303 [main] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 18:17:35.318 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:17:35.318 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=36.0 humedad=70
+2026-07-07 18:17:35.318 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=1
+2026-07-07 18:17:35.318 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=2 revisado sin alerta. temperatura=37.0 humedad=75
+2026-07-07 18:17:36.139 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:17:36.139 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=36.0 humedad=70
+2026-07-07 18:17:36.139 [main] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:18:58.191 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 41091 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 18:18:58.192 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:18:58.802 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 18:18:58.807 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:18:58.809 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:18:58.809 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 18:18:58.843 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:18:58.843 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 608 ms
+2026-07-07 18:18:59.110 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:18:59.120 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 18:18:59.127 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.203 seconds (process running for 1.525)
+2026-07-07 18:18:59.130 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:18:59.750 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.1 humedad=36 condicion=Clear
+2026-07-07 18:19:04.128 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:19:04.128 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.1 humedad=36
+2026-07-07 18:19:04.129 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 18:19:04.129 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 18:19:07.086 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a facundozonis7@gmail.com para clima id=1
+2026-07-07 18:19:07.087 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a martiticapa@gmail.com para clima id=1
+2026-07-07 18:19:09.761 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a martiticapa@gmail.com para clima id=1
+2026-07-07 18:19:09.762 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis15@gmail.com para clima id=1
+2026-07-07 18:19:12.504 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a facundozonis15@gmail.com para clima id=1
+2026-07-07 18:19:12.504 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=1
+2026-07-07 18:24:20.019 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 41751 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 18:24:20.020 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:24:20.605 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-07-07 18:24:20.610 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-07-07 18:24:20.612 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:24:20.612 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 18:24:20.641 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:24:20.642 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 582 ms
+2026-07-07 18:24:20.909 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-07-07 18:24:20.919 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-07-07 18:24:20.926 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.142 seconds (process running for 1.439)
+2026-07-07 18:24:20.931 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:24:21.629 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.1 humedad=36 condicion=Clear
+2026-07-07 18:24:37.714 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 41925 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 18:24:37.715 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:24:38.322 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-07-07 18:24:38.327 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-07-07 18:24:38.328 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:24:38.328 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 18:24:38.357 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:24:38.357 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 601 ms
+2026-07-07 18:24:38.624 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-07-07 18:24:38.634 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-07-07 18:24:38.641 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.182 seconds (process running for 1.49)
+2026-07-07 18:24:38.644 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:24:39.028 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.1 humedad=36 condicion=Clear
+2026-07-07 18:24:43.641 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:24:43.642 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.1 humedad=36
+2026-07-07 18:24:43.642 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 18:24:43.643 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 18:24:46.402 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a facundozonis7@gmail.com para clima id=1
+2026-07-07 18:24:46.402 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a martiticapa@gmail.com para clima id=1
+2026-07-07 18:24:49.222 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a martiticapa@gmail.com para clima id=1
+2026-07-07 18:24:49.222 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis15@gmail.com para clima id=1
+2026-07-07 18:24:52.120 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a facundozonis15@gmail.com para clima id=1
+2026-07-07 18:24:52.121 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=1
+2026-07-07 18:26:23.491 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 42307 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 18:26:23.492 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:26:24.068 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 18:26:24.074 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:26:24.075 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:26:24.076 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 18:26:24.108 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:26:24.109 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 574 ms
+2026-07-07 18:26:24.369 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:26:24.380 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 18:26:24.387 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.138 seconds (process running for 1.452)
+2026-07-07 18:26:24.390 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:26:24.863 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=17.1 humedad=36 condicion=Clear
+2026-07-07 18:26:29.388 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:26:29.388 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=17.1 humedad=36
+2026-07-07 18:26:29.388 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 18:26:29.389 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis7@gmail.com para clima id=1
+2026-07-07 18:26:32.694 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a facundozonis7@gmail.com para clima id=1
+2026-07-07 18:26:32.694 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a martiticapa@gmail.com para clima id=1
+2026-07-07 18:26:35.535 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a martiticapa@gmail.com para clima id=1
+2026-07-07 18:26:35.535 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a facundozonis15@gmail.com para clima id=1
+2026-07-07 18:26:38.880 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a facundozonis15@gmail.com para clima id=1
+2026-07-07 18:26:38.880 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=1
+2026-07-07 18:28:28.332 [main] INFO  Aplicacion.ClimalertApplication - Starting ClimalertApplication using Java 25.0.3 with PID 43011 (/home/facundozonis/Facu/DSI/CLIMALERT/CLIMA/target/classes started by facundozonis in /home/facundozonis/Facu/DSI/CLIMALERT/CLIMA)
+2026-07-07 18:28:28.333 [main] INFO  Aplicacion.ClimalertApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 18:28:28.921 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 18:28:28.926 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:28:28.928 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 18:28:28.928 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-07 18:28:28.958 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-07-07 18:28:28.958 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 584 ms
+2026-07-07 18:28:29.215 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 18:28:29.225 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-07-07 18:28:29.232 [main] INFO  Aplicacion.ClimalertApplication - Started ClimalertApplication in 1.136 seconds (process running for 1.44)
+2026-07-07 18:28:29.234 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:28:29.857 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=1 ubicacion=Buenos Aires temperatura=15.2 humedad=44 condicion=Clear
+2026-07-07 18:28:34.232 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:28:34.233 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=15.2 humedad=44
+2026-07-07 18:28:34.233 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 18:28:34.234 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a juanm13irigoyen@gmail.com para clima id=1
+2026-07-07 18:28:37.634 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a juanm13irigoyen@gmail.com para clima id=1
+2026-07-07 18:28:37.634 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a matron964@gmail.com para clima id=1
+2026-07-07 18:28:40.369 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a matron964@gmail.com para clima id=1
+2026-07-07 18:28:40.369 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a vicentecasarottoo@gmail.com para clima id=1
+2026-07-07 18:28:43.140 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a vicentecasarottoo@gmail.com para clima id=1
+2026-07-07 18:28:43.141 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=1
+2026-07-07 18:29:34.232 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:30:34.232 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:31:34.232 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:32:34.232 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:33:29.231 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:33:29.533 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=2 ubicacion=Buenos Aires temperatura=15.2 humedad=44 condicion=Clear
+2026-07-07 18:33:34.232 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=1
+2026-07-07 18:33:34.232 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=2 temperatura=15.2 humedad=44
+2026-07-07 18:33:34.232 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=2 a 3 destinatarios
+2026-07-07 18:33:34.232 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a juanm13irigoyen@gmail.com para clima id=2
+2026-07-07 18:33:37.146 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a juanm13irigoyen@gmail.com para clima id=2
+2026-07-07 18:33:37.146 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a matron964@gmail.com para clima id=2
+2026-07-07 18:33:40.006 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a matron964@gmail.com para clima id=2
+2026-07-07 18:33:40.006 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a vicentecasarottoo@gmail.com para clima id=2
+2026-07-07 18:33:43.206 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a vicentecasarottoo@gmail.com para clima id=2
+2026-07-07 18:33:43.206 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=2
+2026-07-07 18:34:34.232 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 18:35:34.232 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 18:36:34.232 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 18:37:34.232 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 18:38:29.231 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Buscando clima actual para ubicacion=Buenos Aires, Argentina
+2026-07-07 18:38:29.559 [scheduling-1] INFO  Schedulers.SchedulerClimaInfo - Clima guardado id=3 ubicacion=Buenos Aires temperatura=15.2 humedad=44 condicion=Clear
+2026-07-07 18:38:34.232 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=2
+2026-07-07 18:38:34.232 [scheduling-1] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=3 temperatura=15.2 humedad=44
+2026-07-07 18:38:34.232 [scheduling-1] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=3 a 3 destinatarios
+2026-07-07 18:38:34.232 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a juanm13irigoyen@gmail.com para clima id=3
+2026-07-07 18:38:36.942 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a juanm13irigoyen@gmail.com para clima id=3
+2026-07-07 18:38:36.942 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a matron964@gmail.com para clima id=3
+2026-07-07 18:38:39.701 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a matron964@gmail.com para clima id=3
+2026-07-07 18:38:39.701 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Enviando mail de alerta a vicentecasarottoo@gmail.com para clima id=3
+2026-07-07 18:38:42.434 [scheduling-1] INFO  Notificaciones.NotificadorPorMail - Mail de alerta enviado a vicentecasarottoo@gmail.com para clima id=3
+2026-07-07 18:38:42.434 [scheduling-1] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=3
+2026-07-07 18:41:16.506 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 2 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:41:16.509 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=30.0 humedad=70
+2026-07-07 18:41:16.509 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=2 temperatura=36.0 humedad=70
+2026-07-07 18:41:16.509 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=2 a 3 destinatarios
+2026-07-07 18:41:16.510 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=2
+2026-07-07 18:41:16.510 [main] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 18:41:16.513 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:41:16.514 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=36.0 humedad=70
+2026-07-07 18:41:16.514 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 18:41:16.514 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=1
+2026-07-07 18:41:16.514 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=1
+2026-07-07 18:41:16.514 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=2 temperatura=37.0 humedad=75
+2026-07-07 18:41:16.514 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=2 a 3 destinatarios
+2026-07-07 18:41:16.514 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=2
+2026-07-07 18:41:17.278 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:41:17.278 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=36.0 humedad=70
+2026-07-07 18:41:17.278 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 18:41:17.278 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=1
+2026-07-07 18:41:17.279 [main] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:41:17.279 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=1
+2026-07-07 18:41:17.279 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=2 temperatura=37.0 humedad=75
+2026-07-07 18:41:17.279 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=2 a 3 destinatarios
+2026-07-07 18:41:17.279 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=2
+2026-07-07 18:52:18.060 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 2 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:52:18.062 [main] INFO  Schedulers.SchedulerProcesadorClima - Clima id=1 revisado sin alerta. temperatura=30.0 humedad=70
+2026-07-07 18:52:18.062 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=2 temperatura=36.0 humedad=70
+2026-07-07 18:52:18.062 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=2 a 3 destinatarios
+2026-07-07 18:52:18.063 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=2
+2026-07-07 18:52:18.063 [main] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=2
+2026-07-07 18:52:18.066 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:52:18.067 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=36.0 humedad=70
+2026-07-07 18:52:18.067 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 18:52:18.067 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=1
+2026-07-07 18:52:18.067 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=1
+2026-07-07 18:52:18.067 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=2 temperatura=37.0 humedad=75
+2026-07-07 18:52:18.067 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=2 a 3 destinatarios
+2026-07-07 18:52:18.067 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=2
+2026-07-07 18:52:18.844 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=0
+2026-07-07 18:52:18.844 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=1 temperatura=36.0 humedad=70
+2026-07-07 18:52:18.844 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=1 a 3 destinatarios
+2026-07-07 18:52:18.844 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=1
+2026-07-07 18:52:18.844 [main] INFO  Schedulers.SchedulerProcesadorClima - No hay registros nuevos para procesar. ultimoIdProcesado=1
+2026-07-07 18:52:18.844 [main] INFO  Schedulers.SchedulerProcesadorClima - Procesando 1 registros nuevos desde ultimoIdProcesado=1
+2026-07-07 18:52:18.844 [main] WARN  Schedulers.SchedulerProcesadorClima - Alerta critica detectada id=2 temperatura=37.0 humedad=75
+2026-07-07 18:52:18.845 [main] INFO  Notificaciones.GestorDeAlertas - Despachando alerta de clima id=2 a 3 destinatarios
+2026-07-07 18:52:18.845 [main] INFO  Schedulers.SchedulerProcesadorClima - Alerta despachada correctamente para clima id=2
